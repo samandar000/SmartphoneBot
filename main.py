@@ -146,8 +146,8 @@ def phone_list(update: Update, context: CallbackContext):
             row = []
         
 
-    keyboar = InlineKeyboardMarkup(keyboard)
-    bot.sendMessage(chat_id=chat_id,text='Choose a phone',reply_markup=keyboar)
+    keyboard = InlineKeyboardMarkup(keyboard)
+    bot.sendMessage(chat_id=chat_id,text='Choose a phone',reply_markup=keyboard)
 def add_cart(update: Update, context: CallbackContext):
     query = update.callback_query
     chat_id = query.message.chat_id
